@@ -15,7 +15,7 @@ public class AnotherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_another);
+        this.setContentView(R.layout.activity_another);
 
         Intent intent = getIntent();
         String question = intent.getStringExtra(MainActivity.EXTRA_QUESTION);
@@ -26,11 +26,11 @@ public class AnotherActivity extends AppCompatActivity {
 
     public void sendAnswer(View view) {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        EditText editText = findViewById(R.id.editText2);
+        EditText editText = findViewById(R.id.editText);
         String answer = editText.getText().toString();
         intent.putExtra(EXTRA_ANSWER, answer);
-        setResult(RESULT_OK, intent);
-        finish();
+        this.setResult(RESULT_OK, intent);
+        this.finish();
     }
 
 }

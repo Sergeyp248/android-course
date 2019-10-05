@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        this.setContentView(R.layout.activity_main);
     }
 
     public void sendQuestion(View view) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.editText);
         String question = editText.getText().toString();
         intent.putExtra(EXTRA_QUESTION, question);
-        startActivityForResult(intent, ANSWER_REQUEST_CODE);
+        this.startActivityForResult(intent, ANSWER_REQUEST_CODE);
     }
 
     @Override
