@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Новое Приложение</string>
+    <string name="edit_message">Введите вопрос</string>
+    <string name="button_ok">OK</string>
+    <string name="send_reply">Введите ответ</string>
+    <string name="landscape_view">Ландшафтный вид</string>
+</resources>

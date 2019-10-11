@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/LayoutTemplate">
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:hint="@string/edit_message"
+        style="@style/EditMessage" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:onClick="sendQuestion"
+        android:text="@string/button_ok"
+        style="@style/OkButton" />
+
+    <TextView
+        android:id="@+id/reply_message"
+        style="@style/ShowMessage" />
+
+</LinearLayout>
