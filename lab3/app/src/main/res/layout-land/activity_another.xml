@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AnotherActivity"
+    style="@style/LayoutTemplate">
+
+    <fragment
+        android:id="@+id/main_fragment_land"
+        android:name="com.example.kekapp.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/LandscapeView"
+        android:text="@string/landscape_view" />
+
+</LinearLayout>

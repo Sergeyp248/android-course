@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kek App</string>
+    <string name="question_message">Enter a question</string>
+    <string name="button_ok">OK</string>
+    <string name="reply_message">Enter an answer</string>
+    <string name="landscape_view">Landscape view</string>
+</resources>

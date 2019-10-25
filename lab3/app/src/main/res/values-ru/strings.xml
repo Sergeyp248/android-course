@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Кек Приложение</string>
+    <string name="question_message">Введите вопрос</string>
+    <string name="button_ok">OK</string>
+    <string name="reply_message">Введите ответ</string>
+    <string name="landscape_view">Ландшафтный вид</string>
+</resources>

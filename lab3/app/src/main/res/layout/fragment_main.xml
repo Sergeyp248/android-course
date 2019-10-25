@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainFragment"
+    style="@style/FrameTemplate">
+
+    <EditText
+        android:id="@+id/edit_message"
+        style="@style/EditMessage" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:text="@string/button_ok"
+        style="@style/OkButton" />
+
+    <TextView
+        android:id="@+id/message_type"
+        style="@style/ShowMessage" />
+
+</FrameLayout>
