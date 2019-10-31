@@ -5,14 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final String LOG_TAG = "MainActivity";
 
     public static final String EXTRA_QUESTION = "com.example.kekapp.QUESTION";
     public static final int ANSWER_REQUEST_CODE = 1;
@@ -44,10 +45,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == ANSWER_REQUEST_CODE) {
             if(resultCode == RESULT_OK) {
+
+                String exitConfirmation = data.getStringExtra(AnotherActivity.EXTRA_EXIT);
+
+                if(exitConfirmation != null && exitConfirmation.equals("exit")) {
+                    this.finishAndRemoveTask();
+                }
+
                 TextView textView = findViewById(R.id.message_type);
                 String answer = data.getStringExtra(AnotherActivity.EXTRA_ANSWER);
                 textView.setText(answer);
             }
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.settings:
+                return true;
+            case R.id.help:
+                return true;
+            case R.id.exit:
+                ExitDialog exitDialog = new ExitDialog();
+                exitDialog.show(getSupportFragmentManager(), "dialog");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 

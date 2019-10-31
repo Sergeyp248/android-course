@@ -4,4 +4,10 @@
     <string name="button_ok">OK</string>
     <string name="reply_message">Введите ответ</string>
     <string name="landscape_view">Ландшафтный вид</string>
+    <string name="settings">Настройки</string>
+    <string name="help">Помощь</string>
+    <string name="exit">Выход</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="exitDialogMessage">Вы действительно хотите выйти?</string>
 </resources>
