@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UsersStorageApp</string>
+    <string name="users">Users</string>
+    <string name="addUser">Add user</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="birthDate">Birth date</string>
+    <string name="searchHint">Enter a first or last name</string>
+    <string name="searchButton">Search</string>
+    <string name="updateList">Update Users list</string>
+</resources>
